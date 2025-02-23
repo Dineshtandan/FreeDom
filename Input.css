@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Fiesole';
+    src: url('/fonts/Fiesole.woff2') format('woff2'),
+         url('/fonts/Fiesole.woff') format('woff'),
+         url('/fonts/Fiesole.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

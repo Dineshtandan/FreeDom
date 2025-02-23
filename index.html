@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <style>@font-face{font-family:'Fiesole';src:url('/fonts/Fiesole.woff2') format('woff2'),url('/fonts/Fiesole.woff') format('woff'),url('/fonts/Fiesole.ttf') format('truetype');}body{font-family:'Fiesole',sans-serif;}</style>
+
+    <title>Freedom Studio</title>
+  </head>
+  <body class="w-screen overflow-x-hidden relative font">
+    <nav class="md:flex-col flex-auto md:pt-15 pt-5 justify-center items-center md:relative sticky top-0 z-50 bg-white">
+      <div class="flex items-center justify-between px-6 py-4">
+        <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none cursor-pointer">
+          &#8801;
+        </button>
+        <div class="flex-1 flex justify-center md:justify-center">
+          <a href="./index.html">
+            <img src="../images/logo.png" alt="Freedom" class="pt-2 mx-auto" />
+          </a>
+        </div>
+      </div>
+      <div id="menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+        <button id="close-menu" class="text-3xl p-4 cursor-pointer">&times;</button>
+        <ul class="flex flex-col p-4">
+          <li class="py-2"><a href="../index.html">HOME</a></li>
+          <li class="py-2"><a href="">ABOUT</a></li>
+          <li class="py-2"><a href="./html/inativev.html">INITIATIVES</a></li>
+          <li class="py-2"><a href="./html/movments.html">MOVEMENTS</a></li>
+          <li class="py-2"><a href="./html/connect.html">CONTACT</a></li>
+          <li class="py-2"><a href="">MAP</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:flex justify-center mt-4">
+        <ul class="md:flex hidden justify-center gap-10">
+          <li class="m-2 text-1xl"><a href="../index.html">HOME</a></li>
+          <li class="m-2 text-1xl relative group">
+            <a href="#" class="block">ABOUT</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+              <a href="">
+                <li class="py-1 px-2 hover:bg-gray-100">Missions & purposes</li>
+              </a>
+              <a href="">
+                <li class="py-1 px-2 hover:bg-gray-100">TEAM</li>
+              </a>
+              <a href="">
+                <li class="py-1 px-2 hover:bg-gray-100">PARTNERS</li>
+              </a>
+            </ul>
+          </li>
+          <li class="m-2 text-1xl relative group">
+            <a href="./html/inativev.html" class="block">INITIATIVES</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+              <a href="./html/Movement-Resource-Center.html">
+                <li class="py-1 px-2 hover:bg-gray-100">Movement Resource Center</li>
+              </a>
+              <a href="./html/The-Artivism-Lab.html">
+                <li class="py-1 px-2 hover:bg-gray-100">The Artivism Lab</li>
+              </a>
+              <a href="./html/Civic-Media-and-Innovation-Hub.html">
+                <li class="py-1 px-2 hover:bg-gray-100">Center for Civic Media and Innovation Hub</li>
+              </a>
+              <a href="./html/Artvocacy-Academy.html">
+                <li class="py-1 px-2 hover:bg-gray-100">Artvocacy Academy</li>
+              </a>
+            </ul>
+          </li>
+          <li class="m-2 text-1xl relative group">
+            <a href="./html/movments.html" class="block">MOVEMENTS</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+              <a href="./html/anupama.html">
+                <li class="py-1 px-2 hover:bg-gray-100">women leadership anupam</li>
+              </a>
+              <a href="./html/shiftthe.html">
+                <li class="py-1 px-2 hover:bg-gray-100">shiftthepower</li>
+              </a>
+              <a href="./html/peace.html">
+                <li class="py-1 px-2 hover:bg-gray-100">peace starts here</li>
+              </a>
+              <a href="">
+                <li class="py-1 px-2 hover:bg-gray-100">climate justice</li>
+              </a>
+              <a href="./html/lgbt.html">
+                <li class="py-1 px-2 hover:bg-gray-100">lgbtqi rights</li>
+              </a>
+              <a href="./html/justic.html">
+                <li class="py-1 px-2 hover:bg-gray-100">end predatory lendings</li>
+              </a>
+              <a href="./html/com.html">
+                <li class="py-1 px-2 hover:bg-gray-100">netuwa rights</li>
+              </a>
+            </ul>
+          </li>
+          <li class="m-2 text-1xl relative group">
+            <a href="./html/connect.html" class="block">Contact</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+              <a href="./html/ourresources.html">
+                <li class="py-1 px-2 hover:bg-gray-100">our resources</li>
+              </a>
+              <a href="./html/newsandevent.html">
+                <li class="py-1 px-2 hover:bg-gray-100">news events</li>
+              </a>
+              <a href="./html/reachus.html">
+                <li class="py-1 px-2 hover:bg-gray-100">reach us</li>
+              </a>
+            </ul>
+          </li>
+          <li class="m-2 text-1xl"><a href="#">MAP</a></li>
+        </ul>
+      </div>
+    </nav>    
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function () {
+        document.getElementById('menu').classList.remove('-translate-x-full');
+      });
+    
+      document.getElementById('close-menu').addEventListener('click', function () {
+        document.getElementById('menu').classList.add('-translate-x-full');
+      });
+    </script>
+    
+    
+    <main>
+      <div
+        class="bg-emerald-600 flex-col items-center justify-center p-8 mt-10 "
+      >
+        <div
+          class="text-center text-white text-wrap font-light text-3xl flex justify-center p-3"
+        >
+          Youth led non-profit that works to expand civic expression and
+          peaceful moblization by integrating Art, Media <br />and Technology.
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="cursor-pointer mt-3 p-2 ease-in-out duration-100  hover:bg-gray-500 bg-gray-400 font-medium text-white text-2xl">
+            Join the MOVMENTS
+          </button>
+        </div>
+      </div>
+      <div class="bg-white m-10">
+        <div class="flex-row bg-red-800 p-10">
+          <div class="relative w-full max-w-3xl mx-auto overflow-hidden">
+            <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+              <img src="./images/display1.jpg" class="w-full object-cover" />
+              <img src="./images/Dispaly2.jpg" class="w-full object-cover" />
+              <img src="./images/Display3.jpg" class="w-full object-cover" />
+            </div>
+            <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">❮</button>
+            <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2">❯</button>
+          </div>
+          
+          <div
+            class="flex justify-center text-2xl m-3 text-white font-bold text-wrap"
+          >
+            Where Art meets Activism
+          </div>
+          <div class="text-wrap text-center text-lg text-white">
+            Freedom Studio is a pro-democracy, movement building initiative that
+            strategically and creatively supports civic mobilization. We invest
+            in building leadership and capacities of marginalized citizens
+            especially younger ones, in expanding full potential of the social
+            activism/movement they are leading. We mainly train them on
+            leadership approaches, strategic development, nonviolent resistance,
+            artivism, and digital media campaign. We believe such efforts will
+            lift their power status in the society and challenges unjust social
+            norms and practices.
+          </div>
+        </div>
+      </div>
+      <div class="bg-red-800 flex-col justify-center items-center p-20">
+        <div class="text-white text-4xl font-bold text-center">INITIATIVES</div>
+        <div class="grid grid-cols-1 lg:grid-cols-4  gap-8 p-4">
+          <div class="flex-row justify-center items-center">
+            <div>
+              <img
+                src="./images/grid1.png"
+                class="w-full h-auto object-cover"
+                alt="Grid Image 1"
+              />
+            </div>
+            <div class="text-2xl mt-5 font-medium text-white text-center">
+              Movement Resource Center
+            </div>
+            <div class="text-base mt-3 text-wrap text-white text-center">
+              Movement Resource Center (MRC) is a dynamic platform for activists
+              and leaders of social movements to connect and innovatively
+              respond to injustices and civic restrictions.
+            </div>
+          </div>
+          <div class="flex-row justify-center items-center">
+            <div>
+              <img
+                src="./images/grid2.png"
+                class="w-full h-auto object-cover"
+                alt="Grid Image 1"
+              />
+            </div>
+            <div class="text-2xl mt-5 font-medium text-white text-center">
+              The Artivism Lab
+            </div>
+            <div class="text-base mt-3 text-wrap text-white text-center">
+              ​The Artivism Lab is a creative space that assesses and empowers
+              artists and activists on using diverse forms of art in social and
+              political issues.​
+            </div>
+          </div>
+          <div class="flex-row justify-center items-center">
+            <div>
+              <img
+                src="./images/grid3.png"
+                class="w-full h-auto object-cover"
+                alt="Grid Image 1"
+              />
+            </div>
+            <div class="text-2xl mt-5 font-medium text-white text-center">
+              Center for Civic Media and Innovation Hub
+            </div>
+            <div class="text-base mt-3 text-wrap text-white text-center">
+              Movement Media uses new media and technologies to design, create
+              and foster civic engagement and ethical flow of information.
+            </div>
+          </div>
+          <div class="flex-row justify-center items-center">
+            <div>
+              <img
+                src="./images/grid4.png"
+                class="w-full h-auto object-cover"
+                alt="Grid Image 1"
+              />
+            </div>
+            <div class="text-2xl mt-5 font-medium text-white text-center">
+              Artvocacy Academy
+            </div>
+            <div class="text-base mt-3 text-wrap text-white text-center">
+              Artvocacy Academy, a pioneering initiative by Freedom Studio,
+              invented to harness the power of art as a dynamic tool for
+              advocacy and legal activism.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-20 bg-cover bg-center bg-[url(./images/blur_back.jpg)] whitespace-nowrap">
+        <div class="bg-white/30 backdrop-blur-sm p-20">
+            <div class=" text-center text-4xl font-bold ">Gallary</div>
+            <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+                <div class="-m-1 flex flex-wrap md:-m-2">
+                  <div class="flex w-1/2 flex-wrap">
+                    <div class="w-1/2 p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal1.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal2.jpg" />
+                    </div>
+                    <div class="w-full p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal3.jpg" />
+                    </div>
+                  </div>
+                  <div class="flex w-1/2 flex-wrap">
+                    <div class="w-full p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal4.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal5.jpg" />
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2">
+                      <img
+                        alt="gallery"
+                        class="block h-full w-full rounded-lg object-cover object-center"
+                        src="./images/gal6.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+      </div>
+      
+    </main>
+    <footer>
+        <div class="bg-white">
+            <div class="text-center text-4xl font-bold pt-10">
+                <a href="">Freedom Studio</a>
+            </div>
+            <div class="text-lg">
+                <p>New Baneshwor – 31, Kathmandu, Nepal</p>
+                <p>Email: contact@studiofreedom.org</p>
+                <p>Contact No.: 9866567628</p>
+            </div>
+            <div>
+                <p class="mb-2 text-xl font-semibold flex justify-center">Follow Us on Social Media</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-xl hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-xl hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-xl hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-xl hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-xl hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-red-800 text-center text-white">
+            ​Copyright © 2024 Freedom Studio. All rights reserved.
+        </div>
+    </footer>
+  </body>
+  <script>
+    const slider = document.getElementById("slider");
+    const images = slider.getElementsByTagName("img");
+    let index = 0;
+  
+    function showSlide(i) {
+      if (i >= images.length) index = 0;
+      if (i < 0) index = images.length - 1;
+      slider.style.transform = `translateX(${-index * 100}%)`;
+    }
+  
+    document.getElementById("next").addEventListener("click", () => {
+      index++;
+      showSlide(index);
+    });
+  
+    document.getElementById("prev").addEventListener("click", () => {
+      index--;
+      showSlide(index);
+    });
+  
+    // Auto-slide every 3 seconds
+    setInterval(() => {
+      index++;
+      showSlide(index);
+    }, 3000);
+  </script>
+  
+</html>

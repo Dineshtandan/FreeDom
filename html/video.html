@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>@font-face{font-family:'Fiesole';src:url('/fonts/Fiesole.woff2') format('woff2'),url('/fonts/Fiesole.woff') format('woff'),url('/fonts/Fiesole.ttf') format('truetype');}body{font-family:'Fiesole',sans-serif;}</style>
+
+</head>
+<body>
+  <nav class="md:flex-col flex-auto md:pt-15 pt-5 justify-center items-center md:relative sticky top-0 z-50 bg-white">
+    <div class="flex items-center justify-between px-6 py-4">
+      <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none cursor-pointer">
+        &#8801;
+      </button>
+      <div class="flex-1 flex justify-center md:justify-center">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="Freedom" class="pt-2 mx-auto" />
+        </a>
+      </div>
+    </div>
+    <div id="menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+      <button id="close-menu" class="text-3xl p-4 cursor-pointer">&times;</button>
+      <ul class="flex flex-col p-4">
+        <li class="py-2"><a href="../index.html">HOME</a></li>
+        <li class="py-2"><a href="">ABOUT</a></li>
+        <li class="py-2"><a href="inativev.html">INITIATIVES</a></li>
+        <li class="py-2"><a href="./movments.html">MOVEMENTS</a></li>
+        <li class="py-2"><a href="./connect.html">CONTACT</a></li>
+        <li class="py-2"><a href="">MAP</a></li>
+      </ul>
+    </div>
+    <div class="hidden md:flex justify-center mt-4">
+      <ul class="md:flex hidden justify-center gap-10">
+        <li class="m-2 text-1xl"><a href="../index.html">HOME</a></li>
+        <li class="m-2 text-1xl relative group">
+          <a href="#" class="block">ABOUT</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+            <a href="">
+              <li class="py-1 px-2 hover:bg-gray-100">Missions & purposes</li>
+            </a>
+            <a href="">
+              <li class="py-1 px-2 hover:bg-gray-100">TEAM</li>
+            </a>
+            <a href="">
+              <li class="py-1 px-2 hover:bg-gray-100">PARTNERS</li>
+            </a>
+          </ul>
+        </li>
+        <li class="m-2 text-1xl relative group">
+          <a href="./inativev.html" class="block">INITIATIVES</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+            <a href="./Movement-Resource-Center.html">
+              <li class="py-1 px-2 hover:bg-gray-100">Movement Resource Center</li>
+            </a>
+            <a href="./The-Artivism-Lab.html">
+              <li class="py-1 px-2 hover:bg-gray-100">The Artivism Lab</li>
+            </a>
+            <a href="./Civic-Media-and-Innovation-Hub.html">
+              <li class="py-1 px-2 hover:bg-gray-100">Center for Civic Media and Innovation Hub</li>
+            </a>
+            <a href="./Artvocacy-Academy.html">
+              <li class="py-1 px-2 hover:bg-gray-100">Artvocacy Academy</li>
+            </a>
+          </ul>
+        </li>
+        <li class="m-2 text-1xl relative group">
+          <a href="./movments.html" class="block">MOVEMENTS</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+            <a href="./anupama.html">
+              <li class="py-1 px-2 hover:bg-gray-100">women leadership anupam</li>
+            </a>
+            <a href="./shiftthe.html">
+              <li class="py-1 px-2 hover:bg-gray-100">shiftthepower</li>
+            </a>
+            <a href="./peace.html">
+              <li class="py-1 px-2 hover:bg-gray-100">peace starts here</li>
+            </a>
+            <a href="">
+              <li class="py-1 px-2 hover:bg-gray-100">climate justice</li>
+            </a>
+            <a href="./lgbt.html">
+              <li class="py-1 px-2 hover:bg-gray-100">lgbtqi rights</li>
+            </a>
+            <a href="./justic.html">
+              <li class="py-1 px-2 hover:bg-gray-100">end predatory lendings</li>
+            </a>
+            <a href="./com.html">
+              <li class="py-1 px-2 hover:bg-gray-100">netuwa rights</li>
+            </a>
+          </ul>
+        </li>
+        <li class="m-2 text-1xl relative group">
+          <a href="./connect.html" class="block">Contact</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+            <a href="./ourresources.html">
+              <li class="py-1 px-2 hover:bg-gray-100">our resources</li>
+            </a>
+            <a href="./newsandevent.html">
+              <li class="py-1 px-2 hover:bg-gray-100">news events</li>
+            </a>
+            <a href="./reachus.html">
+              <li class="py-1 px-2 hover:bg-gray-100">reach us</li>
+            </a>
+          </ul>
+        </li>
+        <li class="m-2 text-1xl"><a href="#">MAP</a></li>
+      </ul>
+    </div>
+  </nav>   
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+          document.getElementById('menu').classList.remove('-translate-x-full');
+        });
+      
+        document.getElementById('close-menu').addEventListener('click', function () {
+          document.getElementById('menu').classList.add('-translate-x-full');
+        });
+      </script>
+      <main>
+        <div class="bg-gray-200 py-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-semibold text-center mb-8">Videos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/watch?v=7EBmWQAa96Q" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/watch?v=BPJ827Ad5Uc" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/watch?v=ity95Ou9EIA" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/watch?v=JMxqU2krCK8" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/embed/video_id5" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full">
+                        <iframe class="w-full aspect-video " src="https://www.youtube.com/embed/video_id6" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer class="bg-red-800 text-white py-8">
+        <div class="container mx-auto px-8 text-center space-y-4">
+          <p>Freedom Studio</p>
+          <p>
+            New Baneshwor – 31, Kathmandu, Nepal <br />
+            Email: <a href="mailto:contact@studiofreedom.org" class="underline">contact@studiofreedom.org</a> <br />
+            Contact No.: 9866567628
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:contact@studiofreedom.org" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center text-sm mt-4">
+        Copyright © 2024 Freedom Studio. All rights reserved.
+      </div> 
+</body>
+</html>

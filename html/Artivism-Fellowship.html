@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artivism Fellowship</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>@font-face{font-family:'Fiesole';src:url('/fonts/Fiesole.woff2') format('woff2'),url('/fonts/Fiesole.woff') format('woff'),url('/fonts/Fiesole.ttf') format('truetype');}body{font-family:'Fiesole',sans-serif;}</style>
+
+</head>
+<body>
+    <nav class="md:flex-col flex-auto md:pt-15 pt-5 justify-center items-center md:relative sticky top-0 z-50 bg-white">
+        <div class="flex items-center justify-between px-6 py-4">
+          <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none cursor-pointer">
+            &#8801;
+          </button>
+          <div class="flex-1 flex justify-center md:justify-center">
+            <a href="../index.html">
+              <img src="../images/logo.png" alt="Freedom" class="pt-2 mx-auto" />
+            </a>
+          </div>
+        </div>
+        <div id="menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+          <button id="close-menu" class="text-3xl p-4 cursor-pointer">&times;</button>
+          <ul class="flex flex-col p-4">
+            <li class="py-2"><a href="../index.html">HOME</a></li>
+            <li class="py-2"><a href="">ABOUT</a></li>
+            <li class="py-2"><a href="">INITIATIVES</a></li>
+            <li class="py-2"><a href="./movments.html">MOVEMENTS</a></li>
+            <li class="py-2"><a href="./connect.html">CONTACT</a></li>
+            <li class="py-2"><a href="">MAP</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex justify-center mt-4">
+          <ul class="md:flex hidden justify-center gap-10">
+            <li class="m-2 text-1xl"><a href="../index.html">HOME</a></li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">ABOUT</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Missions & purposes</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">TEAM</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">PARTNERS</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">INITIATIVES</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Movement Resource Center</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">The Artivism Lab</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Center for Civic Media and Innovation Hub</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Artvocacy Academy</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./movments.html" class="block">MOVEMENTS</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./anupama.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">women leadership anupam</li>
+                </a>
+                <a href="./shiftthe.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">shiftthepower</li>
+                </a>
+                <a href="./peace.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">peace starts here</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">climate justice</li>
+                </a>
+                <a href="./lgbt.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">lgbtqi rights</li>
+                </a>
+                <a href="./justic.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">end predatory lendings</li>
+                </a>
+                <a href="./com.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">netuwa rights</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./connect.html" class="block">Contact</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./ourresources.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">our resources</li>
+                </a>
+                <a href="./newsandevent.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">news events</li>
+                </a>
+                <a href="./reachus.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">reach us</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl"><a href="#">MAP</a></li>
+          </ul>
+        </div>
+      </nav>    
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+          document.getElementById('menu').classList.remove('-translate-x-full');
+        });
+      
+        document.getElementById('close-menu').addEventListener('click', function () {
+          document.getElementById('menu').classList.add('-translate-x-full');
+        });
+      </script>
+      <main>
+        <section class="max-w-6xl mx-auto p-6 text-center">
+            <h1 class="text-4xl font-bold text-gray-900">Artivism Fellowship</h1>
+            <p class="mt-4 text-gray-700 max-w-3xl mx-auto">
+                Artivism Fellowship is a flagship program of Freedom Studio where we engage emerging artists and activists around Nepal who are passionate in exploring ways to use creative art for social and political activism and expanding freedom and justice in Nepal...
+            </p>
+            
+            <div class="mt-6 flex justify-center space-x-8 text-lg font-semibold">
+                <div>Artivism Fellowship 2021</div>
+                <div>Artivism Fellowship 2022</div>
+            </div>
+            
+            <h2 class="mt-10 text-3xl font-bold text-gray-900">Artivism Fellows 2023</h2>
+            <div class="grid md:grid-cols-5 sm:grid-cols-2 gap-8 mt-8">
+                <div class="text-center">
+                    <img src="../images/p1.jpeg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Aanik</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p2.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Acharya Gopal</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p3.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Altaf Miyan</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p4.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Anjana Thapa Magar</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p5.jpeg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Awantika Gharti</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p6.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Bikash Thapa</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p7.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Bhumika Tharu</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p8.png" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Pooja Kumari Baishya</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p9.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Purnima  Vaishya</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p10.png" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Ranjeet Sharma</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p11.jpeg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Renu Ghimire</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p12.jpeg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Resham Neupane</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p13.png" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Rose Magar</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p14.jpeg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Sanjay Chaudhary</p>
+                </div>
+                <div class="text-center">
+                    <img src="../images/p15.jpg" alt="" class="w-32 h-32 mx-auto">
+                    <p class="mt-2 font-semibold">Sunil Lamsal</p>
+                </div>
+            </div>
+            </section>        
+      </main>
+      <footer class="bg-red-800 text-white py-8">
+        <div class="container mx-auto px-8 text-center space-y-4">
+          <p>Freedom Studio</p>
+          <p>
+            New Baneshwor – 31, Kathmandu, Nepal <br />
+            Email: <a href="mailto:contact@studiofreedom.org" class="underline">contact@studiofreedom.org</a> <br />
+            Contact No.: 9866567628
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:contact@studiofreedom.org" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center text-sm mt-4">
+        Copyright © 2024 Freedom Studio. All rights reserved.
+      </div> 
+</body>
+</html>

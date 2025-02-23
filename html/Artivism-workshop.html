@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artivism Workshop</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>@font-face{font-family:'Fiesole';src:url('/fonts/Fiesole.woff2') format('woff2'),url('/fonts/Fiesole.woff') format('woff'),url('/fonts/Fiesole.ttf') format('truetype');}body{font-family:'Fiesole',sans-serif;}</style>
+
+</head>
+<body>
+    <nav class="md:flex-col flex-auto md:pt-15 pt-5 justify-center items-center md:relative sticky top-0 z-50 bg-white">
+        <div class="flex items-center justify-between px-6 py-4">
+          <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none cursor-pointer">
+            &#8801;
+          </button>
+          <div class="flex-1 flex justify-center md:justify-center">
+            <a href="../index.html">
+              <img src="../images/logo.png" alt="Freedom" class="pt-2 mx-auto" />
+            </a>
+          </div>
+        </div>
+        <div id="menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+          <button id="close-menu" class="text-3xl p-4 cursor-pointer">&times;</button>
+          <ul class="flex flex-col p-4">
+            <li class="py-2"><a href="../index.html">HOME</a></li>
+            <li class="py-2"><a href="">ABOUT</a></li>
+            <li class="py-2"><a href="">INITIATIVES</a></li>
+            <li class="py-2"><a href="./movments.html">MOVEMENTS</a></li>
+            <li class="py-2"><a href="./connect.html">CONTACT</a></li>
+            <li class="py-2"><a href="">MAP</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex justify-center mt-4">
+          <ul class="md:flex hidden justify-center gap-10">
+            <li class="m-2 text-1xl"><a href="../index.html">HOME</a></li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">ABOUT</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Missions & purposes</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">TEAM</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">PARTNERS</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">INITIATIVES</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Movement Resource Center</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">The Artivism Lab</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Center for Civic Media and Innovation Hub</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Artvocacy Academy</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./movments.html" class="block">MOVEMENTS</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./anupama.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">women leadership anupam</li>
+                </a>
+                <a href="./shiftthe.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">shiftthepower</li>
+                </a>
+                <a href="./peace.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">peace starts here</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">climate justice</li>
+                </a>
+                <a href="./lgbt.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">lgbtqi rights</li>
+                </a>
+                <a href="./justic.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">end predatory lendings</li>
+                </a>
+                <a href="./com.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">netuwa rights</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./connect.html" class="block">Contact</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./ourresources.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">our resources</li>
+                </a>
+                <a href="./newsandevent.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">news events</li>
+                </a>
+                <a href="./reachus.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">reach us</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl"><a href="#">MAP</a></li>
+          </ul>
+        </div>
+      </nav>    
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+          document.getElementById('menu').classList.remove('-translate-x-full');
+        });
+      
+        document.getElementById('close-menu').addEventListener('click', function () {
+          document.getElementById('menu').classList.add('-translate-x-full');
+        });
+      </script>
+      <main>
+        <div class="max-w-6xl mx-auto p-6">
+          <h1 class="text-4xl font-bold text-gray-900 text-center">Artivism Workshop</h1>
+          <p class="mt-4 text-gray-700  max-w-3xl mx-auto">
+            ​Freedom Studio, through Artivism Workshop, puts an effort to recognize and explore art inside every activist and activism inside every artist. The 'Artivism Workshop' is targeted at artists, activists, and community workers. It introduces them to theories, tools, and techniques of artivism, engages them in creating artivism content, and develops action plans for integrating art into their activism work. Through this workshop, Freedom Studio aims to harness the critical imagination of participants to question socio-political injustice existing in the community and design events and creative strategies to contribute towards more just and peaceful societies.
+          </p>
+          
+          <h2 class="mt-6 text-2xl font-semibold text-gray-800 text-center">Objectives</h2>
+          <ul class="list-disc list-inside mt-2 text-gray-700 max-w-3xl mx-auto">
+              <li>To equip artists and activists with the theories, tools, and techniques of artistic activism.</li>
+              <li>To empower participants in integrating art and activism in their actions and movements.</li>
+              <li>To create a strong network of artists and activists and expand civic space.</li>
+          </ul>
+          
+          <div class="grid md:grid-cols-2 gap-8 mt-8 items-start">
+              <div class="space-y-6">
+                  <div class="flex flex-col items-center">
+                      <h3 class="text-lg font-semibold mt-2 text-center">‘Artivism: A creative form of social and political expression’ – Berlin</h3>
+                      <img src="../images/workshop1.jpg" alt="Berlin Workshop" class="w-full h-auto ">
+                      <p class="mt-2 text-gray-600 text-center">AArtivism is a term that describes a form of creative expression that combines art and activism. Artivism uses art as a tool for social and political change by raising awareness, challenging cultural norms, and inspiring action.
+                        Artivism can take many forms, including street art, graffiti, murals, performance art, music, theatre, and photography. Artivists may use their art to draw attention to inspire people to take action and make positive changes in their communities. Art can be a powerful form of expression, and artists apply their creativity to generate messages that leave an impact on the audience.​
+                        </p>
+                  </div>
+                  <hr>
+                  <div class="flex flex-col items-center">
+                      <h3 class="text-lg font-semibold mt-2 text-center">Artivism workshop – Sainamaina Rural Municipality, Rupandehi</h3>
+                      <img src="../images/workshop2.jpg" alt="Sainamaina Workshop" class="w-full h-auto ">
+                      
+                  </div>
+                  <hr>
+                  <div class="flex flex-col items-center">
+                     <h3 class="text-lg font-semibold mt-2 text-center">Artivism for PSEA – Kathmandu</h3>
+                      <img src="../images/workshop 3.jpg" alt="PSEA Kathmandu" class="w-full h-auto ">
+                      <p class="mt-2 text-gray-600 text-center">AArtivism is a term that describes a form of creative expression that combines art and activism. Artivism uses art as a tool for social and political change by raising awareness, challenging cultural norms, and inspiring action.
+                        ​The workshop titled 'Artivism for Democracy' is one of the workshops Freedom Studio has been working on. 22 young emerging artists and activists were invited to participate in this workshop to know and understand the power of activism through art. The workshop introduced theories, tools, and techniques of artivism. The participants also took part in an art-making session where they created unique art pieces to reflect their feelings as activists. Two of the participants in this workshop choose to portray their emotions through writing, whereas the other participants chose to express themselves via drawing & painting. The program motivated young artists and activists to use the power of art to express how they felt about Democracy Day. The workshop established a space for connection with the FS and for collaboration with young artists and activists.
+                      </p>
+                  </div>
+                  <hr>
+              </div>
+              <div class="space-y-6">
+                  <div class="flex flex-col items-center">
+                      <h3 class="text-lg font-semibold mt-2 text-center">‘From Protests to Painting’ – Guatemala</h3>
+                  </div>
+                  <hr>
+                  <div class="flex flex-col items-center">
+                      <h3 class="text-lg font-semibold mt-2 text-center">Art for Inclusive Election – Kathmandu</h3>
+                      <img src="../images/workshop4.jpeg" alt="Inclusive Election" class="w-full h-auto ">
+                  </div>
+                  <hr>
+                  <div class="flex flex-col items-center">
+                     <h3 class="text-lg font-semibold mt-2 text-center">Artivism for Democracy – Kathmandu</h3>
+                      <img src="../images/workshop5.jpg" alt="Democracy Workshop" class="w-full h-auto ">
+                      <p class="mt-2 text-gray-600 text-center">This event is divided into three main sessions, the first of which provides knowledge on inclusivity as a democratic election principle and uses art to reflect, raise awareness, and demand non-discrimination and equal suffrage. In the second part of the activity, young people are involved in creating a variety of artistic mediums, including but not limited to paintings, songs, videography, etc. Participants share their completed artwork and experiences at the event in the concluding part.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </main>
+      <footer class="bg-red-800 text-white py-8">
+        <div class="container mx-auto px-8 text-center space-y-4">
+          <p>Freedom Studio</p>
+          <p>
+            New Baneshwor – 31, Kathmandu, Nepal <br />
+            Email: <a href="mailto:contact@studiofreedom.org" class="underline">contact@studiofreedom.org</a> <br />
+            Contact No.: 9866567628
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:contact@studiofreedom.org" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center text-sm mt-4">
+        Copyright © 2024 Freedom Studio. All rights reserved.
+      </div> 
+</body>
+</html>

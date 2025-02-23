@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artivism Outreach</title>
+    <link rel="stylesheet" href="../output.css">
+    <style>@font-face{font-family:'Fiesole';src:url('/fonts/Fiesole.woff2') format('woff2'),url('/fonts/Fiesole.woff') format('woff'),url('/fonts/Fiesole.ttf') format('truetype');}body{font-family:'Fiesole',sans-serif;}</style>
+
+</head>
+<body>
+    <nav class="md:flex-col flex-auto md:pt-15 pt-5 justify-center items-center md:relative sticky top-0 z-50 bg-white">
+        <div class="flex items-center justify-between px-6 py-4">
+          <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none cursor-pointer">
+            &#8801;
+          </button>
+          <div class="flex-1 flex justify-center md:justify-center">
+            <a href="../index.html">
+              <img src="../images/logo.png" alt="Freedom" class="pt-2 mx-auto" />
+            </a>
+          </div>
+        </div>
+        <div id="menu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform md:hidden">
+          <button id="close-menu" class="text-3xl p-4 cursor-pointer">&times;</button>
+          <ul class="flex flex-col p-4">
+            <li class="py-2"><a href="../index.html">HOME</a></li>
+            <li class="py-2"><a href="">ABOUT</a></li>
+            <li class="py-2"><a href="">INITIATIVES</a></li>
+            <li class="py-2"><a href="./movments.html">MOVEMENTS</a></li>
+            <li class="py-2"><a href="./connect.html">CONTACT</a></li>
+            <li class="py-2"><a href="">MAP</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex justify-center mt-4 gap-10">
+          <ul class="md:flex hidden justify-center">
+            <li class="m-2 text-1xl"><a href="../index.html">HOME</a></li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">ABOUT</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Missions & purposes</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">TEAM</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">PARTNERS</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="#" class="block">INITIATIVES</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Movement Resource Center</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">The Artivism Lab</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Center for Civic Media and Innovation Hub</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">Artvocacy Academy</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./movments.html" class="block">MOVEMENTS</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./anupama.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">women leadership anupam</li>
+                </a>
+                <a href="./shiftthe.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">shiftthepower</li>
+                </a>
+                <a href="./peace.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">peace starts here</li>
+                </a>
+                <a href="">
+                  <li class="py-1 px-2 hover:bg-gray-100">climate justice</li>
+                </a>
+                <a href="./lgbt.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">lgbtqi rights</li>
+                </a>
+                <a href="./justic.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">end predatory lendings</li>
+                </a>
+                <a href="./com.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">netuwa rights</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl relative group">
+              <a href="./connect.html" class="block">Contact</a>
+              <ul class="absolute hidden group-hover:block bg-white shadow-lg mt-1 p-2 rounded-md z-10 whitespace-nowrap">
+                <a href="./ourresources.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">our resources</li>
+                </a>
+                <a href="./newsandevent.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">news events</li>
+                </a>
+                <a href="./reachus.html">
+                  <li class="py-1 px-2 hover:bg-gray-100">reach us</li>
+                </a>
+              </ul>
+            </li>
+            <li class="m-2 text-1xl"><a href="#">MAP</a></li>
+          </ul>
+        </div>
+      </nav>    
+      <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+          document.getElementById('menu').classList.remove('-translate-x-full');
+        });
+      
+        document.getElementById('close-menu').addEventListener('click', function () {
+          document.getElementById('menu').classList.add('-translate-x-full');
+        });
+      </script>
+      <main>
+        <div class="max-w-6xl mx-auto p-6">
+            <h1 class="text-4xl font-bold text-red-700">Artivism Outreach</h1>
+            
+            <div class="mt-8 space-y-12">
+                <div class="text-center">
+                    <h2 class="text-2xl font-semibold">All Hands Together</h2>
+                    <div class="">
+                      <div class="w-full  mx-auto slideshow-container" id="slideshow1">
+                          <img src="../images/1/1.jpeg" class="w-full  slide" alt="All Hands Together">
+                          <img src="../images/1/2.jpeg" class="w-full  slide" alt="All Hands Together">
+                          <img src="../images/1/3.jpeg" class="w-full  slide" alt="All Hands Together">
+                          <img src="../images/1/4.jpeg" class="w-full  slide" alt="All Hands Together">
+                          <img src="../images/1/5.jpeg" class="w-full  slide" alt="All Hands Together">
+                          <img src="../images/1/6.jpeg" class="w-full  slide" alt="All Hands Together">
+                      </div>
+                      <div>
+                        <p class="mt-4 text-gray-700">All hands together, a grassroot peacebuilding project integrated 12 young activists belonging from Madhes and Pahad community of Nepal and rejuvenated the unity and energy to work together for ethnic justice, harmony and social cohesion in their communities.
+                          This intercultural exchange program through several lectures, workshops, community visits, civic actions, sightseeing and sharing session rejuvenated the energy of 16 young enthusiasts of Kathmandu valley and Janakpur  by creating a platform to understand each other’s culture and strengthen ties. This program was able to develop skills, network and goals among participants to act to unite communities and create harmony in Nepal./p>
+                      </div>
+                    </div>
+                </div>
+        
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-2xl font-semibold">March against Global Climate Change</h2>
+                        <p class="mt-4 text-gray-700">Freedom Studio in coordination with Centre for Social Change (CSC) organized six ‘PSEA workshop’ with 400 adolescent girls of Koshi flood affected families in Sunsari district and in neighourhood of Bhutanese Rufugee Camp in Jhapa district. The workshop used technique of art education to explain the different types of sexual exploitation and absue (SEA), vulnerable groups and reporting channels, where 16 different art-products from 14 artists were demonstrated and discussed among the participants</p>
+                    </div>
+                    <div class="relative w-full max-w-3xl mx-auto slideshow-container" id="slideshow2">
+                        <img src="../images/2/1.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        <img src="../images/2/2.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        <img src="../images/2/1.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        <img src="../images/2/2.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        <img src="../images/2/1.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        <img src="../images/2/2.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                    </div>
+                </div>
+        
+                <div class="bg-red-900 text-white p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold">Protection from Sexual Exploitation and Abuse (PSEA) Workshops</h2>
+                    <div class="grid md:grid-cols-2 gap-8 mt-4 items-center">
+                        <p>
+                          March against Global Climate Change was organized to mark World Environment Day 2019, whilst, engaging young people for climate action. This program was organized to advocate for the protection of Himalayas from the global warming and it aimed to ensure healthy environment and clean mountains through awareness raising. 33 young people engaged in 6 days trekking program to Mardi Base Camp. Along the way, they collected waste materials found alongside the trails, which, at the end of the trail, artists produced a structured monument (satirical) out of the accumulated waste materials.</p>
+                        <div class="relative w-full max-w-3xl mx-auto slideshow-container" id="slideshow3">
+                          <img src="../images/3/1.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                          <img src="../images/3/2.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                          <img src="../images/3/3.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                          <img src="../images/3/4.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                          <img src="../images/3/5.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                          <img src="../images/3/6.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="bg-red-900 text-white p-6 rounded-lg">
+                    <h2 class="text-2xl font-semibold">Youth Peace Caravan</h2>
+                    <div class="grid md:grid-cols-2 gap-8 mt-4 items-center">
+                        <div class="relative w-[400px] max-w-3xl mx-auto slideshow-container" id="slideshow4">
+                            <img src="../images/4/1.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                            <img src="../images/4/2.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                            <img src="../images/4/3.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                            <img src="../images/4/4.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                            <img src="../images/4/5.jpg" class="w-full object-cover slide" alt="All Hands Together">
+                            <img src="../images/4/3.jpeg" class="w-full object-cover slide" alt="All Hands Together">
+                        </div>
+                        <p>Youth Peace Caravan, a 10 days long travel program brought hands-on artivism trainings and community awareness activities to five communities in Gandaki and Lumbini provinces of Nepal. YPC moved from Kathmandu and travelled across three geographical regions of Nepal spreading the message of peace, justice, freedom and democratic governance. During the YPC, freedom Studio team undertook field research to identify scope and challenges of Artivism in Nepal. During the 10 days campaign, Caravan stopped in atleast 5 locations from these regions and conducted and observed several artivism and cultural activities. YPC activities were mainly divided into three broad categories:
+                          Learn, observe and experience scope and challenges of local art and culture.
+                          Organize 4 Artivism workshops among youth and women groups.
+                          Conduct 3 community awareness programs in himal, pahad and terai region</p>
+                    </div>
+                </div>
+        
+                <div class="text-center">
+                    <h2 class="text-2xl font-semibold">Human Rights Art Festival 2022</h2>
+                    <div class="flex">
+                      <div class="relative w-full h-full  slideshow-container" id="slideshow5">
+                          <img src="../images/5/1.jpeg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                          <img src="../images/5/2.jpeg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                          <img src="../images/5/3.jpeg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                          <img src="../images/5/4.jpeg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                          <img src="../images/5/5.jpg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                          <img src="../images/5/4.jpeg" class="w-full h-full object-cover  absolute slide" alt="Human Rights Art Festival">
+                      </div>
+                      <div class="ml-6">
+                        <p class="mt-4 text-gray-700">“Human Rights Art Festival 2022” (HRAF2022) engaged & encouraged young artists and activists to use art as awareness of human rights issues. HRAF2022 was organized on the occasion of Human Rights Day 2022, December 10 with the theme “Dignity, Freedom, and Justice for All.”
+                          This event was collaborated with the Centre for Social Change (CSC) & St. Xavier’s College. 130 people participated in the event where 25 participants performed art paintings and face painting, 15 participants performed musical acts including songs, dances, and poems, and other participants installed stalls reflecting culture, art & craftwork. 
+                          Along with the event, prominent guests like Pukar Bam, Milan Rai, Gopal Siwakoti, Pratima Gurung, Prof. Kapil Sharma, and more were invited to present their achievements and stories behind their success.
+                          The event motivated young artists, activists & leaders to showcase the power & possibility of art in society. It also created a platform for young artists & activists to collaborate with FS. HRAF2022’s results demonstrated that today’s youth are increasingly involved, concerned, and focused on human rights issues.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      </main>
+      <footer class="bg-red-800 text-white py-8">
+        <div class="container mx-auto px-8 text-center space-y-4">
+          <p>Freedom Studio</p>
+          <p>
+            New Baneshwor – 31, Kathmandu, Nepal <br />
+            Email: <a href="mailto:contact@studiofreedom.org" class="underline">contact@studiofreedom.org</a> <br />
+            Contact No.: 9866567628
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+            <a href="mailto:contact@studiofreedom.org" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center text-sm mt-4">
+        Copyright © 2024 Freedom Studio. All rights reserved.
+      </div> 
+      <script>
+        function startSlideshow() {
+            let slideshows = document.querySelectorAll(".slideshow-container");
+            let index = 0;
+
+            function showSlides() {
+                slideshows.forEach(slideshow => {
+                    let slides = slideshow.querySelectorAll(".slide");
+                    slides.forEach((slide, i) => {
+                        slide.style.display = i === index ? "block" : "none";
+                    });
+                });
+                index = (index + 1) % slideshows[0].querySelectorAll(".slide").length;
+            }
+
+            showSlides();
+            setInterval(showSlides, 3000);
+        }
+
+        document.addEventListener("DOMContentLoaded", startSlideshow);
+    </script>
+        
+</body>
+</html>
